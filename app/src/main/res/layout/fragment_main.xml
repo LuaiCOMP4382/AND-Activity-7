@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/item1_title"
+        android:textSize="26sp"
+        android:layout_margin="6dp"
+        android:onClick="openFirstItem"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/item2_title"
+        android:textSize="26sp"
+        android:layout_margin="6dp"
+        android:onClick="openSecondItem"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/item3_title"
+        android:textSize="26sp"
+        android:layout_margin="6dp"
+        android:onClick="openThirdItem"/>
+
+</LinearLayout>

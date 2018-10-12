@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Activity 7</string>
+
+    <string name="item1_title">Fragments</string>
+    <string name="item2_title">Libraries</string>
+    <string name="item3_title">FCM</string>
+
+    <string name="item1_desc">Reusable UI elements - Responsive design - Master Detail Flow</string>
+    <string name="item2_desc">Common problems - No need to solve from zero - Use others work - Not stealing!</string>
+    <string name="item3_desc">Store data on the cloud - Chatting app - Get creative</string>
+
+</resources>

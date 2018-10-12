@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO (1): Create another bools.xml for the configuration when the device's width is at least 600 dp. In that other file, set has_600_width to true -->
+    <bool name="has_600_width">false</bool>
+</resources>
