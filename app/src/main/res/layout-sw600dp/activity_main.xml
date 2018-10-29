@@ -20,7 +20,13 @@
         android:background="#111111"
         />
 
-    <!-- TODO (2): Add the details fragment here, as our main activity will contain the two fragments in tablet mode (in width >= 600dp) -->
-
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragment_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:name="com.example.luai.activity7.DetailsFragment" />
 
 </LinearLayout>

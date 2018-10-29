@@ -16,9 +16,10 @@ public class MainActivity extends AppCompatActivity implements MainFragment.OnFr
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // TODO (5): Use the support fragment manager to get MainFragment and store it in mFragmentMain.
-        // TODO (6): Do the same for mFragmentDetails, only if we are in tablet mode
+        mFragmentMain = (MainFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_main);
 
+        if (getResources().getBoolean(R.bool.has_600_width))
+            mFragmentDetails = (DetailsFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_details);
 
     }
 
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements MainFragment.OnFr
     @Override
     public void onFragmentInteraction(int index) {
 
-        // TODO (7): Since we made the fragment call onFragmentInteraction. Call setDescText on the details fragment, and there is no need to send an intent, because we are not opening another activity
+        mFragmentDetails.setDescText(index);
 
     }
 }

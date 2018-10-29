@@ -47,8 +47,17 @@ public class MainFragment extends Fragment {
 
     public void openItem(int index) {
 
-        // TODO (3): There are two possible cases. The device is a phone, or a tablet (has 600 width or more). Use bools.xml resource file to know if it's tablet (600 dp width) or not.
-        // TODO (4): If the device is a normal phone, start DetailsActivity through an intent (and pass in index as extra), else if it is a tablet, call mListener.onFragmentInteraction, and pass in index. The listner will represent the activity containing this fragment
+        if (getResources().getBoolean(R.bool.has_600_width))
+            mListener.onFragmentInteraction(index);
+
+        else {
+
+            Intent intent = new Intent(getContext(), DetailsActivity.class);
+            intent.putExtra(ITEM_INDEX_KEY, index);
+
+            startActivity(intent);
+
+        }
 
     }
 

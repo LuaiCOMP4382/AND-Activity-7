@@ -33,9 +33,8 @@ public class DetailsFragment extends Fragment {
 
         int index = 0;
 
-        // TODO (8): Get the index value from intent's MainFragment.ITEM_INDEX_KEY
         if (i != null)
-
+            index = i.getIntExtra(MainFragment.ITEM_INDEX_KEY, 0);
 
         setDescText(index);
 
